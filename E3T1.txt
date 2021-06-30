@@ -1,0 +1,7 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+The brute force attack detected the unauthorized access of instance through malicious means.
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+GuardDuty monitors and analyzes aws account and workload event data that are found in AWS CloudTrails,
+VPC flow logs and DNS logs.
+The source of information for this brute force attack is VPC flow logs that are in s3 bucket.
+This log data shows the requests of SSH brute force attack which are targeting the server/instance.

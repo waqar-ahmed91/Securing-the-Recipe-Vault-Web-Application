@@ -1,0 +1,9 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+1.  Ensure no security groups allow ingress from 0.0.0.0/0 to port 22
+2.  On instance i-04aad2eb6def673a9, UDP port 20 which is associated with 'FTP' is reachable from the internet
+3.  Unprotected port on EC2 instance i-04aad2eb6def673a9 is being probed.
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+Solutions to mitigate above mentioned vulnerabilities are:
+1. IP restrictions should be applied to restrict traffic to port 22
+2. Only required ports should be allowed in the inbound rules of the security group.
+3. Domain allow list or firewall should be applied to for the protection of ports.

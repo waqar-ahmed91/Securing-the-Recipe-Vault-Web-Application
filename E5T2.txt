@@ -1,0 +1,14 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+CloudSpoilt tool is used for scanning of infrastructure as code templates.
+### Example vulnerability
+ELBs with invalid SSL configurations.
+##Scan AMI’s or containers for OS vulnerabilities
+Clair is an open source tool to scan containers for OS vulnerabilities.
+### Example vulnerability
+provides notifications of vulnerabilities based on the common Vulnerabilities and Exposures database (CVE)
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWS Config is used to assess, audit and monitor cloud configuration vulnerabilities.
+### Example vulnerability
+AWS services like S3 encryption, Instances Public IP Access etc..

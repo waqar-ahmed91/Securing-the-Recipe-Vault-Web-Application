@@ -1,0 +1,8 @@
+According to the architecture diagram two of the bad practices are:
+1. Allowing network traffic from all ports in the public and private subnet
+Solution: Network ACL (Access Control List) rules must be applied to control the inbound and outbound traffic. 
+          This will minimize the risks of malicious activities on the server or infrastructure by attackers.
+
+2. Poor or no IAM Role and Policy which is giving access to all the users to access both buckets (free and secret recipes).
+Solution: Proper IAM Role and Policy should be defined and implemented with specific roles to allow the users 
+          from the internet gateway to access the free recipes bucket and not the secret recipes bucket.
